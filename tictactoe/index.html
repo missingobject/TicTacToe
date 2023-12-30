@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>X/O</h1>
-    <div id="board">
+    <div id="box">
       <div data-index="1" class="tile right-border bottom-border"></div>
       <div data-index="2" class="tile right-border bottom-border"></div>
       <div data-index="3" class="tile bottom-border"></div>
@@ -19,12 +19,12 @@
       <div data-index="7" class="tile right-border"></div>
       <div data-index="8" class="tile right-border"></div>
       <div data-index="9" class="tile"></div>
-      <div id="strike" class="strike"></div>
+      <div id="wincombo" class="wincombo"></div>
     </div>
     <div id="scoreboard">
-      <span id="player1-score">Player X: 0</span>
+      <span id="first-player-score">Player 1: 0</span>
       <p>|</p>
-      <span id="player2-score">Player O: 0</span>
+      <span id="second-player-score">Player 2: 0</span>
     </div>
     <div id="game-over-area" class="hidden">
       <h2 id="game-over-text">Winner is X</h2>
