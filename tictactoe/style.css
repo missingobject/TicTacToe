@@ -2,11 +2,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(142,197,252);
-background: radial-gradient(circle, rgba(142,197,252,1) 0%, rgba(224,195,252,1) 100%);
+  background: rgb(142, 197, 252);
+  background: radial-gradient(
+    circle,
+    rgba(142, 197, 252, 1) 0%,
+    rgba(224, 195, 252, 1) 100%
+  );
 }
 
-#board {
+#box {
   display: grid;
   grid-template-columns: 120px 120px 120px;
   grid-template-rows: 120px 120px 120px;
@@ -32,62 +36,60 @@ background: radial-gradient(circle, rgba(142,197,252,1) 0%, rgba(224,195,252,1) 
   border-bottom: 0.3em solid white;
 }
 
-.strike {
+.wincombo {
   position: absolute;
   background-color: black;
 }
 
-.strike-row-1 {
+.wincombo-row-1 {
   width: 100%;
   height: 5px;
   top: 13%;
 }
-.strike-row-2 {
+.wincombo-row-2 {
   width: 100%;
   height: 5px;
   top: 46%;
 }
-.strike-row-3 {
+.wincombo-row-3 {
   width: 100%;
   height: 5px;
   top: 83%;
 }
-.strike-column-1 {
+.wincombo-column-1 {
   height: 100%;
   width: 5px;
   left: 15%;
 }
-.strike-column-2 {
+.wincombo-column-2 {
   height: 100%;
   width: 5px;
-  left: 48%;
+  left: 50%;
 }
-.strike-column-3 {
+.wincombo-column-3 {
   height: 100%;
   width: 5px;
   left: 83%;
 }
-.strike-diagonal-1 {
+.wincombo-diagonal-1 {
   width: 90%;
   height: 5px;
   top: 50%;
   left: 5%;
   transform: skewY(45deg);
 }
-.strike-diagonal-2 {
+.wincombo-diagonal-2 {
   width: 90%;
   height: 5px;
   top: 45%;
   left: 5%;
   transform: skewY(-45deg);
-  
 }
 
 h1 {
   color: white;
   font-size: 50px;
   filter: drop-shadow(0 0 0.75rem black);
-
 }
 
 #game-over-area {
@@ -103,20 +105,19 @@ h2 {
   font-size: 3em;
   margin-top: 1px;
   filter: drop-shadow(0 0 0.75rem black);
-
 }
 
 button {
   background-color: white;
   color: black;
   border: white 1px solid;
-  padding: 10px;
+  padding: 20px;
   font-size: 1.5em;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 15px;
   filter: drop-shadow(0 0 0.75rem black);
-  transform: translateY(-30px);
+  transform: translateY(10px);
 }
 
 button:hover {
@@ -125,7 +126,6 @@ button:hover {
   color: white;
   border-radius: 15px;
   filter: drop-shadow(0 0 0.75rem blue);
-  
 }
 
 .hidden {
@@ -147,8 +147,7 @@ button:hover {
   opacity: 0.6;
 }
 
-
-.scores{
+.scores {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -158,21 +157,19 @@ button:hover {
   top: 8rem;
 }
 
-.score{
+.score {
   position: relative;
   left: 3rem;
   top: -140px;
-  
 }
 
-#scoreboard{
+#scoreboard {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top:25px;
+  margin-top: 25px;
   font-size: 25px;
   color: white;
   filter: drop-shadow(0 0 0.5rem black);
   font-weight: bolder;
-
 }
